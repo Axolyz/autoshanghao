@@ -8,9 +8,24 @@
 @Description  : ?
 """
 
-import xlrd, datetime, pyperclip, os, json
-import os, sys
+import datetime
+import json
+import os
+import random
+import sys
 
+import pyperclip
+import xlrd
+
+yanwenzi = [
+    "(..・˘_˘・..)",
+    "(..•˘◡˘•..)",
+    "✡(ヾﾉ・˘ω・˘)",
+    "(｀・ω・´)",
+    "(｡・ˇ‸ˇ・｡)",
+    "ヾ (.・˘◁˘・..)",
+    "(｡･ω･｡)",
+]
 os.chdir(os.path.dirname(sys.argv[0]))
 
 with open("作息时间.json", "r", encoding="utf8") as idiom_file:
@@ -33,5 +48,6 @@ for x in schedule:
         print(str(cell1))
         break
 a = str(int(cell1))
+a += "\n" + random.choice(yanwenzi)
 pyperclip.copy(a)  # 向剪切板发送文本
 os.system("a.ahk")
