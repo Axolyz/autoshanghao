@@ -3,6 +3,8 @@
 
 仅限windows7以上系统 手机不可用
 
+这个仓库只是源代码展示，想用的点[这里](https://github.com/This-username-is-available/autoshanghao/releases)下载发布版（autoshanghao.zip）。
+
 涉及剪贴板操作 报毒属正常 请信任
 
 需要先解压 然后把云视讯的快捷方式挪到文件夹里
